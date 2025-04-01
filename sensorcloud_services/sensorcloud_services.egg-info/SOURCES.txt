@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+aws_services/__init__.py
+aws_services/sns_handler.py
+sensorcloud_services.egg-info/PKG-INFO
+sensorcloud_services.egg-info/SOURCES.txt
+sensorcloud_services.egg-info/dependency_links.txt
+sensorcloud_services.egg-info/requires.txt
+sensorcloud_services.egg-info/top_level.txt

@@ -1,0 +1,102 @@
+🚀 Running Device API Tests...
+
+🔄 Creating a new device...
+ Device created successfully! Device ID: 115c0d21-8bc8-44d2-9b70-44c6761f8b7a
+
+🔄 Fetching all devices...
+✅ Retrieved 2 devices:
+{
+    "power_usage": null,
+    "battery_level": null,
+    "created_at": "2025-03-18T01:22:30.188692",
+    "altitude": null,
+    "uptime": null,
+    "status": "Disconnected",
+    "device_id": "115c0d21-8bc8-44d2-9b70-44c6761f8b7a",
+    "account_id": "001",
+    "name": "Test Sensor",
+    "temperature": null,
+    "voltage": null,
+    "co2_level": null,
+    "longitude": null,
+    "last_data_received": null,
+    "humidity": null,
+    "air_quality": null,
+    "latitude": null,
+    "last_modified": "2025-03-18T01:22:30.188692"
+}
+{
+    "power_usage": null,
+    "battery_level": null,
+    "created_at": "2025-03-18T01:07:12.669530",
+    "altitude": null,
+    "uptime": null,
+    "status": "Disconnected",
+    "device_id": "dd8bd107-b5e5-48bf-a946-6783d1c2f920",
+    "account_id": "001",
+    "name": "Test Sensor",
+    "temperature": null,
+    "voltage": null,
+    "co2_level": null,
+    "longitude": null,
+    "last_data_received": null,
+    "humidity": null,
+    "air_quality": null,
+    "latitude": null,
+    "last_modified": "2025-03-18T01:07:12.669530"
+}
+
+🔄 Updating device 115c0d21-8bc8-44d2-9b70-44c6761f8b7a with sensor data...
+✅ Device 115c0d21-8bc8-44d2-9b70-44c6761f8b7a updated successfully!
+
+🔄 Fetching device 115c0d21-8bc8-44d2-9b70-44c6761f8b7a...
+✅ Device details:
+{
+    "power_usage": null,
+    "battery_level": 50.0,
+    "created_at": "2025-03-18T01:22:30.188692",
+    "altitude": null,
+    "uptime": null,
+    "status": "Active",
+    "device_id": "115c0d21-8bc8-44d2-9b70-44c6761f8b7a",
+    "account_id": "001",
+    "name": "Test Sensor",
+    "temperature": 24.5,
+    "voltage": null,
+    "co2_level": null,
+    "longitude": null,
+    "last_data_received": "2025-03-18T01:22:30.219295",
+    "humidity": 60.0,
+    "air_quality": null,
+    "last_modified": "2025-03-18T01:22:30.219295",
+    "latitude": null
+}
+
+⏳ Simulating device inactivity for status update...
+🔄 Checking device status after simulated inactivity...
+{
+    "power_usage": null,
+    "battery_level": 50.0,
+    "created_at": "2025-03-18T01:22:30.188692",
+    "altitude": null,
+    "uptime": null,
+    "status": "Active",
+    "device_id": "115c0d21-8bc8-44d2-9b70-44c6761f8b7a",
+    "account_id": "001",
+    "name": "Test Sensor",
+    "temperature": 24.5,
+    "voltage": null,
+    "co2_level": null,
+    "longitude": null,
+    "last_data_received": "2025-03-18T01:22:30.219295",
+    "humidity": 60.0,
+    "air_quality": null,
+    "last_modified": "2025-03-18T01:22:30.219295",
+    "latitude": null
+}
+⚠️ Device status is Active instead of 'Idle'.
+
+🔄 Deleting device 115c0d21-8bc8-44d2-9b70-44c6761f8b7a...
+✅ Device 115c0d21-8bc8-44d2-9b70-44c6761f8b7a deleted successfully!
+
+🎉 All tests completed!

@@ -1,0 +1,7 @@
+🔄 Testing Registration API...
+📩 Register API Response: 201
+{"message":"User registered successfully","user_id":"f7856af1-857b-4538-b5af-0c0209b6b07c"}
+
+🔄 Testing Login API...
+📩 Login API Response: 200
+{"message":"Login successful","role":"Engineer","account_id":"acc001"}

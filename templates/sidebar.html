@@ -1,0 +1,123 @@
+<!-- templates/includes/sidebar.html -->
+<div class="sidebar">
+  <div class="sidebar-brand">
+    <h4><i class="fas fa-cloud"></i> <span>SensorCloud</span></h4>
+  </div>
+  <ul class="nav flex-column px-3 mt-3">
+    <li class="nav-item">
+      <a class="nav-link {% if request.path == '/dashboard/' %}active{% endif %}" href="{% url 'dashboard' %}">
+        <i class="fas fa-microchip"></i>
+        <span>Devices</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link {% if request.path == '/analytics/' %}active{% endif %}" href="#">
+        <i class="fas fa-chart-line"></i>
+        <span>Analytics</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link {% if request.path == '/settings/' %}active{% endif %}" href="#">
+        <i class="fas fa-cog"></i>
+        <span>Settings</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link {% if request.path == '/accounts/' %}active{% endif %}" href="{% url 'accounts' %}">
+        <i class="fas fa-users"></i>
+        <span>Accounts</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<style>
+.sidebar {
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  padding-top: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  z-index: 1000;
+}
+
+.sidebar-brand {
+  padding: 0 1rem 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-brand h4 {
+  font-weight: 600;
+  margin-bottom: 0;
+  color: white;
+}
+
+.sidebar-brand i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: #3498db;
+}
+
+.sidebar .nav-item {
+  margin-bottom: 5px;
+  transition: all 0.2s;
+}
+
+.sidebar .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .nav-link:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+
+.sidebar .nav-link.active {
+  color: white;
+  background-color: #3498db;
+}
+
+.sidebar .nav-link i {
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 70px;
+    overflow: hidden;
+  }
+  
+  .sidebar-brand span, 
+  .sidebar .nav-link span {
+    display: none;
+  }
+  
+  .sidebar .nav-link {
+    text-align: center;
+    padding: 12px 5px;
+    justify-content: center;
+  }
+  
+  .sidebar .nav-link i {
+    margin-right: 0;
+    font-size: 1.2rem;
+  }
+}
+</style>
